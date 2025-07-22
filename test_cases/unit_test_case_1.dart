@@ -1,11 +1,14 @@
 import '../src/kata_calculator_step_1.dart';
 
+// added basic if else test case for demo can be done with assert as well and try catch as well demonstrated in other test cases
+
 void main() {
   testBasicAdditionOfTwoNumbers();
 }
 
 void testBasicAdditionOfTwoNumbers() {
   print('Running tests for addition of two numbers');
+
 
   if(add("1,2") == 3){
     print('Test passed: 1 + 2 = 3');
