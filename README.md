@@ -48,12 +48,12 @@ Screenshots of the same are as available below :-
 
 Basic Use Case:-
 
-![alt text]https://github.com/DreaconWalker/TDD---Kata-Calculator/blob/main/flutter_app/tdd_kata_calculator/screenshots/basic_usecase.png
+![alt]https://github.com/DreaconWalker/TDD---Kata-Calculator/blob/main/flutter_app/tdd_kata_calculator/screenshots/basic_usecase.png
 
 Custom Delimiter:- 
 
-![alt text]https://github.com/DreaconWalker/TDD---Kata-Calculator/blob/main/flutter_app/tdd_kata_calculator/screenshots/custom_delimiter_usecase.png
+![alt]https://github.com/DreaconWalker/TDD---Kata-Calculator/blob/main/flutter_app/tdd_kata_calculator/screenshots/custom_delimiter_usecase.png
 
 Error UseCase:-
 
-![alt text]https://github.com/DreaconWalker/TDD---Kata-Calculator/blob/main/flutter_app/tdd_kata_calculator/screenshots/error_usecase.png
+![alt]https://github.com/DreaconWalker/TDD---Kata-Calculator/blob/main/flutter_app/tdd_kata_calculator/screenshots/error_usecase.png
