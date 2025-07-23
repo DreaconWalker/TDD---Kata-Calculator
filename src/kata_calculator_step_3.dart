@@ -15,6 +15,8 @@ int add(String numbers) {
     return 0;
   }
 
+  numbers = numbers.replaceAll(r'\n', ',');
+  
   final parts = numbers.split(RegExp(r'[,\n]'));
   int sum = 0;
 
@@ -28,6 +30,6 @@ int add(String numbers) {
 }
 
 int _processStringToNumberForAddition(String number) {
-  int result = int.parse(number);
+  int result = int.parse(number.trim());
   return result;
 }

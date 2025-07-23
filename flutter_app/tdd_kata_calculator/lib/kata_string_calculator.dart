@@ -1,16 +1,5 @@
-import 'dart:io';
-
-void main() {
-  print('Enter numbers separated by definining custom delimiter:');
-
-  String? numbers = stdin.readLineSync() ?? "";
-
-  int result = add(numbers);
-
-  print('The sum is: $result');
-}
-
-int add(String numbers) {
+class StringCalculator {
+  int add(String numbers) {
   if (numbers.isEmpty) {
     return 0;
   }
@@ -18,7 +7,7 @@ int add(String numbers) {
   String delimiterPattern = r',|\n|\\n';
   String numberPart = numbers;
 
-  //custom delimiter handling - used help of ai to implement just the custom delimiter feature 
+  //custom delimiter handling - used help of ai to implement just the custom delimiter feature
   //but debugged it too to make it work if that counts
 
   if (numbers.startsWith('//')) {
@@ -44,19 +33,33 @@ int add(String numbers) {
   final parts = numberPart.split(RegExp(delimiterPattern));
   
   int sum = 0;
+  List<int> negatives = [];
 
-  for (var part in parts) {
+ for (var part in parts) {
     if (part.isNotEmpty) {
-      sum += _processStringToNumberForAddition(part);
+      int number = _processStringToNumberForAddition(part);
+      
+      if (number < 0) {
+        negatives.add(number);
+      } else {
+          sum += number;
+      }
     }
   }
+
+   if (negatives.isNotEmpty) {
+    throw ArgumentError('negatives not allowed: ${negatives.join(', ')}');
+  }
+
 
   return sum;
 }
 
 int _processStringToNumberForAddition(String number) {
-  int result = int.parse(number);
-  return result;
+  try {
+    return int.parse(number);
+  } catch (e) {
+    throw ArgumentError('Invalid number format: "$number"');
+  }
 }
-
-
+}
