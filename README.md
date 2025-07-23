@@ -30,7 +30,8 @@ If there are multiple negative numbers, show all of them in the exception messag
 
 => navigate to the directory from the project example :- cd src
 => type :- dart run kata_calculator_step_1.dart
- note :- change the name of the file as needed to run the file
+
+note :- change the name of the file as needed to run the file
 
 ===>>> Steps to run unit test cases on the respective kata_calculator step
 
@@ -40,7 +41,7 @@ If there are multiple negative numbers, show all of them in the exception messag
 
 Flutter App - Kata Calculator 
 
-- Single Page app using basic setState and final tested function from dart unit tests 
+- Single Page app using basic setState and finally tested function from previous dart function and unit tests 
 - just added it to a StringCalculator class and added unit tests using flutter test package for the same
 
 
